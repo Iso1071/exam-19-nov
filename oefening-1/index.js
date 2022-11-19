@@ -44,4 +44,18 @@ if (gemeente === "") {
 if (ongeldig !== "") {
   console.log(ongeldig);
 } else {
+  let kaderMax = familienaam.length + 3;
+  if (kaderMax < straatenhuisnummer) {
+    kaderMax = straatenhuisnummer;
+  }
+  if (kaderMax < gemeente + 5) {
+    kaderMax = gemeente + 5;
+  }
+  kaderMax += 4;
+  const lijn = "-".repeat(kaderMax);
+  console.log(lijn);
+  console.log("| " + voornaam[0].toUpperCase() + ". " + familienaam + " |");
+  console.log("| " + straatenhuisnummer + " |");
+  console.log("| " + postcode.toString() + " " + gemeente.toUpperCase() + " |");
+  console.log(lijn);
 }
