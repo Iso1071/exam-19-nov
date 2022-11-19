@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Iso1071/exam-19-nov/issues"
   },
-  "homepage": "https://github.com/Iso1071/exam-19-nov#readme"
+  "homepage": "https://github.com/Iso1071/exam-19-nov#readme",
+  "type": "module",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
